@@ -13,7 +13,7 @@ RUN npm install -g anyproxy@$ANYPROXY_VERSION
 
 ENV HOME /anyproxy
 RUN mkdir /anyproxy
-RUN anyproxy --root
+RUN sudo anyproxy --root
 WORKDIR /anyproxy
 VOLUME /anyproxy
 
