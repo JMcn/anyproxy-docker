@@ -11,10 +11,7 @@ RUN echo "#!/bin/sh" > /usr/bin/open && \
 
 RUN npm install -g anyproxy@$ANYPROXY_VERSION
 
-ENV HOME /anyproxy
 RUN mkdir /anyproxy
-RUN sudo anyproxy --root
-WORKDIR /anyproxy
-VOLUME /anyproxy
+RUN anyproxy --root
 
 CMD anyproxy --intercept --file /anyproxy/anyproxy.log
