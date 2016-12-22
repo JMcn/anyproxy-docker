@@ -9,7 +9,7 @@ RUN echo "#!/bin/sh" > /usr/bin/open && \
     echo "exit 0" >> /usr/bin/open &&\
     chmod +x /usr/bin/open
 
-RUN npm install --global anyproxy@$ANYPROXY_VERSION
+RUN npm install -g anyproxy@$ANYPROXY_VERSION
 
 ENV HOME /anyproxy
 RUN mkdir /anyproxy
