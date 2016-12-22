@@ -17,4 +17,4 @@ RUN anyproxy -g
 WORKDIR /anyproxy
 VOLUME /anyproxy
 
-CMD ["anyproxy", "--intercept", "--file /anyproxy/anyproxy.log"]
+CMD ["anyproxy", "--intercept", "--file /anyproxy"]
